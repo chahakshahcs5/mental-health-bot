@@ -72,9 +72,3 @@ def login():
 
 db = client.mental_health  # creating your flask database using your mongo client
 User = db.users  # creating a collection called "users"
-
-# The dunder if __name__ code block
-if __name__ == "__main__":
-    app.run(
-        debug=True
-    )  # running your server on development mode, setting debug to True
