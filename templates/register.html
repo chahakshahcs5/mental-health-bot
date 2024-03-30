@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="static/css/register.css" />
+  </head>
+  <body>
+    <div id="login-form-wrap">
+      <h2>Register</h2>
+      {% if error %}
+      <p style="color: red">{{ error }}</p>
+      {% endif %}
+      <form id="login-form" action="/register" method="post">
+        <p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          /><i class="validation"><span></span><span></span></i>
+        </p>
+        <p>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          /><i class="validation"><span></span><span></span></i>
+        </p>
+        <p>
+          <input type="submit" id="login" value="Register" />
+        </p>
+      </form>
+      <div id="create-account-wrap">
+        <p>Already a memebr? <a href="login">Login</a></p>
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>
