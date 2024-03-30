@@ -6,9 +6,6 @@ from flask import Flask, render_template, request, url_for, redirect, make_respo
 # with the default port
 from pymongo import MongoClient
 
-# ObjectId function is used to convert the id string to an objectid that MongoDB can understand
-from bson.objectid import ObjectId
-
 # Instantiate the Flask class by creating a flask application
 app = Flask(__name__)
 # Create the mongodb client
